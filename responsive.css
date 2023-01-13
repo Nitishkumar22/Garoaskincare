@@ -1,0 +1,194 @@
+@media(max-width: 500px) {
+    #nav {
+        padding: 0 3vh;
+    }
+
+    #menu h5 {
+        display: none;
+    }
+
+    #logo h2 {
+        font-size: 3.5vh;
+    }
+
+    #bag h6 {
+        font-size: 1.8vh;
+    }
+
+    #bag h5 {
+        display: none;
+    }
+
+    .text {
+        font-size: 2vh;
+    }
+
+    #skincare {
+        flex-direction: column-reverse;
+    }
+
+    #photo {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding: 1vw;
+
+        height: inherit;
+    }
+
+    #photoimg {
+        width: 70%;
+        height: 20vh;
+    }
+
+    #photoimg1 {
+        position: absolute;
+        top: -30%;
+        left: 15%;
+        width: 50%;
+        height: 20vh;
+        border-radius: 10px;
+        background-image: url(https://garoaskincare.com/home/seasons-3.webp);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #photo1 {
+        width: 100%;
+        height: inherit;
+    }
+
+    #photo1img {
+        width: 70%;
+        height: 20vh;
+    }
+
+    #photo1img1 {
+        top: 30%;
+        left: 0%;
+        width: 50%;
+        height: 20vh;
+    }
+
+    #autumn {
+        width: 100%;
+        height: inherit;
+
+    }
+
+    #autumn h5 {
+        text-transform: uppercase;
+        font-size: 3vw;
+        font-weight: 400;
+    }
+
+    #autumn h1 {
+        font-size: 12.5vw;
+        font-weight: 400;
+        text-transform: capitalize;
+
+    }
+
+    #autumn h2 {
+        font-size: 11.5vw;
+    }
+
+    #autumn p {
+        text-align: center;
+        font-size: 3vw;
+    }
+
+    #video {
+        height: 40vh;
+    }
+
+    .firstContainer{
+        height: 60vh;
+    }
+    
+    .firstContainer h1 {
+        font-size: 2.3vh;
+      }
+      .panel .imge {
+        margin-left: 1vh;
+        width: 130%;
+        height: 40%;
+        gap: 2vw;
+      }
+      .panel .img {
+        width: 100%;
+        height: 100%;
+      }
+      .lastContainer {
+        height: 60vh;
+      }
+    
+      .lastContainer h6 {
+        font-size: 2vh;
+      }
+    
+      .lastContainer h1 {
+        font-size: 5vh;
+        margin: 2vh 0;
+
+      }
+    
+      .lastContainer button {
+        position: relative;
+        z-index: 999;
+        padding: 8px 30px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-size: 10px;
+      }
+      #natural{
+        height: 50vh;
+      }
+      #naturalimg{
+        padding: 2vw;
+      }
+      .naturaltext h1{
+          font-size: 4vh;
+          
+      }
+      .naturaltext p{
+        width: 100%;
+      }
+      .naturaltext h5{
+        font-size: 2.6vw;
+      }
+      #footer>h1{
+       font-size: 3vh;
+       display: none;
+      }
+      #shop{
+        font-size: 3vh;
+      } 
+      #social{
+        display: flex;
+        align-items: flex-end;
+        /* background-color: red; */
+      }
+      #social h1{
+        font-size: 2vh;
+        margin-bottom: 0vw;
+    }
+    #social a{
+      font-size: 3vh;
+    }
+    #snav{
+        top: 2%;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+      }
+      #snav h1{
+        text-transform: capitalize;
+        font-weight: 400;
+        margin-top: 20px;
+        font-size: 5vh;
+      }
+}

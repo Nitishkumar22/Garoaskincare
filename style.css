@@ -1,0 +1,473 @@
+@font-face{
+  font-family: montserrat;
+  src: url(./Montserrat/Montserrat-Regular.ttf);
+  font-weight: 400;
+}
+@font-face{
+  font-family: montserrat;
+  src: url(./Montserrat/Montserrat-Bold.ttf);
+  font-weight: 600;
+}
+@font-face{
+  font-family: montserrat;
+  src: url(./Montserrat/Montserrat-SemiBold.ttf);
+  font-weight: 500;
+}
+@font-face{
+  font-family: montserrat;
+  src: url(Voyage-Regular.ttf);
+  font-weight: 400;
+}
+@font-face{
+  font-family: montserrat;
+  src: url(Voyage-Bold.ttf);
+  font-weight: 600;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+html{
+  -webkit-overflow-scrolling: touch;
+}
+
+#main{
+    width: 100%;
+    position: relative;
+    z-index: 99;
+    
+}
+#snav{
+  padding: 3vh;
+  color: #fff;
+  position: absolute;
+  top: 2%;
+  left: -100%;
+  width: 30%;
+  height: 76vh;
+  /* transition: all cubic-bezier(0.19, 1, 0.22, 1).1s; */
+  background-color: rgb(0, 0, 0);
+}
+#snav h1{
+  text-transform: capitalize;
+  font-weight: 400;
+  margin-top: 20px;
+  font-size: 3vw;
+}
+#sidenav{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+  padding-bottom: 2vh;
+  /* position: fixed; */
+  
+  /* background-color: red; */
+}
+
+
+#nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: red; */
+  z-index: 9999;
+  padding: 0 2vw;
+}
+#nav #menu{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#click2{
+  display: none;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#click{
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#menu i{
+  font-size: 25px;
+  font-weight: 200;
+}
+#menu h5{
+  font-size: 20px;
+  font-weight: 400;
+}
+#logo h2{
+  font-size: 2vw;
+  font-weight: 400;
+}
+#bag{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+#bag h6{
+  font-size: 1.2vw;
+  font-weight: 400;
+}
+#bag h5{
+  font-size: 1.2vw;
+  font-weight: 400;
+  border: 1px solid #000;
+  padding: 5px;
+  border-radius: 50%;  
+}
+
+#home{
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  background-color:#F1EBE7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#allslide{
+  position: relative;
+  z-index: 999;
+  /* background-color: #F1EBE7; */
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+
+}
+
+#img{
+  width: 100%;
+  height: 100vh;
+  /* background-color: yellow; */
+  background-image: url(https://garoaskincare.com/home/header.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ color: #fff;
+}
+.text{
+  /* width: 40vw; */
+  /* background-color: red; */
+  font-size: 2vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-transform: capitalize;
+}
+.l{
+  /* width: 10vw; */
+  overflow: hidden;
+  /* background-color: red; */
+
+}
+.l h1 span{
+  display: block;
+  font-weight: 400;
+
+
+}
+.r{
+  /* width: 11vw; */
+  overflow: hidden;
+
+}
+.r h1 span{
+  display: block;
+  font-weight: 400;
+
+}
+.span{
+  /* width: 11vw; */
+  overflow: hidden;
+
+
+}
+.span h1 span{
+  display: block;
+  font-weight: 400;
+
+}
+
+.span1{
+  /* width: 11vw; */
+  overflow: hidden;
+
+}
+.span1 h1 span{
+  display: block;
+  font-weight: 400;
+
+}
+
+
+#skincare{
+  background-color:#F1EBE7;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* background-color: red; */
+}
+#photo{
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 3vw;
+  width: 35vw;
+  height: 100vh;
+  /* background-color: red; */
+}
+#photoimg{
+  position: relative;
+  width: 90%;
+  height: 30vh;
+  border-radius: 10px;
+ background-image: url(https://garoaskincare.com/home/seasons-4.webp);
+ background-size: cover;
+ background-position: center;
+}
+#photoimg1{
+  position: absolute;
+  top: -90%;
+  left: 15%;
+  width: 60%;
+  height: 50vh;
+  border-radius: 10px;
+ background-image: url(https://garoaskincare.com/home/seasons-3.webp);
+ background-size: cover;
+ background-position: center;
+}
+#autumn{
+  width: 30vw;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: green; */
+}
+#autumn h5{
+  text-transform: uppercase;
+  font-size: 1vw;
+  font-weight: 400;
+}
+#autumn h1{
+  margin-top: 3vh;
+    font-size:4.5vw;
+    font-weight: 400;
+   text-transform: capitalize;
+
+}
+#autumn h1 .span1{
+    font-weight: 400
+}
+#autumn h2{
+  font-size:5vw;
+  margin-bottom: 3vh;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+#autumn p{
+  text-align: center;
+  font-size: 1vw;
+}
+
+#photo1{
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* padding: 3vw; */
+  width: 35vw;
+  /* height: 100vh; */
+  /* background-color: red; */
+}
+#photo1img{
+  position: relative;
+  width: 80%;
+  height: 30vh;
+  margin-left: 15vh;
+  border-radius: 10px;
+ background-image: url(https://garoaskincare.com/home/seasons-1.webp);
+ background-size: cover;
+ background-position: center;
+}
+#photo1img1{
+  position: absolute;
+  top: 15%;
+  left: -15%;
+  width: 45%;
+  height: 40vh;
+  border-radius: 10px;
+ background-image: url(https://garoaskincare.com/home/seasons-2.webp);
+ background-size: cover;
+ background-position: center;
+ animation: anim 5s ease-in-out  infinite  both;
+}
+ 
+@keyframes anim{
+  0%{
+      margin-bottom: 50px;
+  }
+  50%{
+      margin-bottom: 0px;
+  }
+  100%{
+    margin-bottom: 50px;
+       
+  }
+}
+
+
+#video{
+  background-color:#F1EBE7;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+#video video{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+#cube{
+  background-color:#F1EBE7;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  /* background-color: red; */
+}
+.swiper {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+#natural{
+  background-color:#F1EBE7;
+  width: 100%;
+  height: 100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+#naturalimg{
+  padding: 2vw;
+  border-radius: 15px;
+  width:90%;
+  height: 85%;
+  background-image: url(https://garoaskincare.com/about/ingredients.webp);
+  background-size: cover;
+  background-position: center;
+}
+.naturaltext h1{
+  text-transform: uppercase;
+    font-size: 4vw;
+    font-weight: 500;
+    
+}
+.naturaltext p{
+  width: 30%;
+  margin: 3vh 0vh;
+}
+.naturaltext h5{
+  font-size: 1vw;
+  font-weight: 400;
+}
+
+#trans{
+   width: 100%;
+   height: 50vh;
+   background-color: transparent;
+}
+#footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  background-color: rgb(15, 5, 5);
+  padding: 3vw;
+}
+#footer>h1{
+  /* background-color: red; */
+  display: flex;
+  align-items: flex-end;
+  font-size: 4vw;
+  font-weight: 500;
+}
+#shop{
+  font-size: 1.8vw;
+}
+#shop h3{
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#shop h3:hover{
+  color: gray;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+  margin: 1vw;
+}
+#social h1{
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    margin-bottom: 2vw;
+    font-weight: 400;
+}
+#social a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 2vw;
+  margin-left: 10px;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+
+
+
+
+
